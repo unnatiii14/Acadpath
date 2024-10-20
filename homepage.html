@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A premier academic institute offering a variety of courses in science, technology, humanities, and business">
+    <meta name="keywords" content="academic, institute, education, courses, college">
+    <meta name="author" content="Academic Institute">
+    <title>Academic Institute</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home" class="logo">AcadPath</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#courses">Courses</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="science-tech.html">Science and Technology <span class="right-arrow">►</span></a></li>
+                        <li><a href="arts-humanities.html">Arts and Humanities <span class="right-arrow">►</span></a></li>
+                        <li><a href="business-economics.html">Business and Economics <span class="right-arrow">►</span></a></li>
+                        <li><a href="social-sciences.html">Social Sciences <span class="right-arrow">►</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="login.html"><button class="login-btn">Log In</button></a>
+        </nav>
+        <h1>Welcome to AcadPath</h1>
+        <p>Where Excellence Meets Opportunity</p>
+        <a href="#courses" class="cta-btn">Explore Courses</a>
+    </header>
+    
+    <div id="grad">
+        <section id="home" class="section">
+            <h2 style="color: white;">Home</h2>
+            <p style="color: white;">Welcome to <strong>AcadPath</strong>, where your journey towards academic excellence begins. Our institute is dedicated to shaping the future by providing a diverse range of courses designed to inspire, challenge, and prepare you for success in a globalized world.</p>
+        <br><br>
+            <div class="highlight">
+                <h3>Why Choose AcadPath?</h3>
+                <ul style="color: rgb(255, 255, 255);">
+                    <li><strong>World-Class Faculty:</strong> Learn from experienced professors and industry leaders who are passionate about teaching and research.</li>
+                    <li><strong>State-of-the-Art Facilities:</strong> Our campus is equipped with modern labs, libraries, and collaborative spaces that enhance the learning experience.</li>
+                    <li><strong>Global Community:</strong> Be a part of a diverse student body representing various cultures and backgrounds, fostering a vibrant and inclusive learning environment.</li>
+                    <li><strong>Career Support:</strong> Benefit from our dedicated career services team, internships, and networking opportunities with top employers.</li>
+                </ul>
+            </div>
+        </section>
+        
+
+    <section id="courses" class="section">
+        <h2>Courses Offered</h2>
+        <div class="course-grid">
+            <a href="science-tech.html"><div class="course-card">
+                <h3>Science and Technology</h3>
+                <p>Explore the future with our cutting-edge courses in engineering, computer science, and biotechnology.</p>
+            </div></a>
+            <a href="arts-humanities.html"><div class="course-card">
+                <h3>Arts and Humanities</h3>
+                <p>Dive into the richness of human culture with courses in literature, history, and philosophy.</p>
+            </div></a>
+            <a href="business-economics.html"><div class="course-card">
+                <h3>Business and Economics</h3>
+                <p>Master the world of finance, marketing, and entrepreneurship through our business programs.</p>
+            </div></a>
+            <a href="social-sciences.html"><div class="course-card">
+                <h3>Social Sciences</h3>
+                <p>Understand society through courses in sociology, psychology, and political science.</p>
+            </div></a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Our institute has been at the forefront of education for over 50 years, fostering growth and knowledge. Our faculty consists of world-renowned scholars and our students excel in all fields.</p>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Our Mission</h3>
+                <p>To provide quality education that prepares our students for the challenges of tomorrow.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Our Vision</h3>
+                <p>Leading innovation and excellence in education on a global scale.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Our Values</h3>
+                <p>Integrity, excellence, and a commitment to lifelong learning.</p>
+            </div>
+        </div>
+        <div class="stats">
+            <h3>Our Achievements</h3>
+            <ul class="stat-list">
+                <li><strong>50+</strong> Years of Excellence in Education</li>
+                <li><strong>200+</strong> Industry Partnerships</li>
+                <li><strong>30,000+</strong> Successful Alumni</li>
+                <li><strong>Top 10</strong> Ranked in Multiple Disciplines Nationally</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Thank you for contacting us! We'll get back to you soon.</p>
+        </div>
+    </div>
+
+    <section id="faq" class="section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    What courses does AcadPath offer? 
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We offer a wide range of courses across various disciplines including Science and Technology, Arts and Humanities, Business and Economics, and Social Sciences.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I apply for a course?
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>You can apply for a course by visiting our 'Courses' section and selecting the program you are interested in. Click 'Apply Now' to start the application process.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    What are the admission requirements?
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Admission requirements vary depending on the course and program. Generally, you will need to submit academic transcripts, proof of qualifications, and a personal statement. Some programs may also require an entrance exam.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Is financial aid available?
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, we offer various scholarships and financial aid packages to assist students. Visit our 'Financial Aid' page or contact our admissions office for more information.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can I visit the campus before applying?
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, we encourage prospective students to visit our campus. You can schedule a campus tour through our 'Contact' section. We offer guided tours throughout the year.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <script>
+        // FAQ Toggle Functionality
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            item.querySelector('.faq-question').addEventListener('click', () => {
+                item.classList.toggle('open');
+            });
+        });
+
+        // Contact Form Submission Alert
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevents the default form submission behavior
+            alert('Your form has been submitted successfully!');
+            contactForm.reset(); // Optional: Clears the form after submission
+        });
+    </script>
+
+    <footer>
+        <div class="social-media">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="X.jpg" alt="Twitter"></a>
+            <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <p style="color: white;">&copy; 2024 Academic Institute. All rights reserved.</p>
+    </footer>
+</body>
+</html>

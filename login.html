@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AcadPath</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="homepage.html" class="logo">AcadPath</a>
+        </nav>
+        <span class="welcome-text">Welcome to AcadPath</span>
+    </header>
+
+    <div class="login-container">
+        <form class="login-form" action="homepage.html" method="POST" onsubmit="return login(event)">
+            <h2>Login</h2>
+            <input type="text" placeholder="Username" id="username" name="username">
+            <input type="password" placeholder="Password" id="password" name="password">
+            <p id="message" style="color: red; text-align: center;"></p>
+            <button type="submit">Login</button>
+            <div class="footer">
+                <p>Don't have an account? <a href="#">Register</a></p>
+                <p><a id="forgot-password-link">Forgot Password</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div id="forgot-password-modal" class="modal">
+        <div class="modal-content">
+            <p>A notification has been sent to your email. Please check your inbox for further instructions.</p>
+            <button id="close-modal">OK</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="X.jpg" alt="Twitter"></a>
+            <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <p style="color: white;">&copy; 2024 Academic Institute. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function login(event) {
+            event.preventDefault(); // Prevent the form from submitting by default
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const message = document.getElementById('message');
+
+            if (username === "" || password === "") {
+                message.textContent = "Please fill in all fields.";
+                return false;
+            }
+            
+            // Assuming validation is successful, you can redirect to the homepage.
+            // Here, you can replace this part with actual login logic.
+            window.location.href = "homepage.html";
+            return true;
+        }
+
+        document.getElementById("forgot-password-link").addEventListener("click", function() {
+            document.getElementById("forgot-password-modal").style.display = "flex";
+        });
+
+        document.getElementById("close-modal").addEventListener("click", function() {
+            document.getElementById("forgot-password-modal").style.display = "none";
+        });
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("forgot-password-modal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
